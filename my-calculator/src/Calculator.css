@@ -1,0 +1,83 @@
+/* src/Calculator.css */
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+.calculator {
+    width: 300px; /* Width of the calculator */
+    margin: 0 auto; /* Center calculator */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the calculator */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; /* Background color of the calculator */
+}
+
+.display {
+    margin-bottom: 20px; /* Space below display */
+    padding: 10px; /* Padding inside display */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    min-height: 50px; /* Minimum height for display */
+    font-size: 24px; /* Font size */
+    text-align: right; /* Align text to the right */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.buttons {
+    display: grid; /* Use grid for buttons */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 15px; /* Padding inside buttons */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border: 1px solid #4caf50; /* Green border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: white; /* Default white background */
+    color: #4caf50; /* Default green text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #4caf50; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+button:active {
+    background-color: #3e8e41; /* Darker green when pressed */
+    color: white; /* White text when pressed */
+}
+
+/* src/App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+}
